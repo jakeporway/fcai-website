@@ -1,0 +1,56 @@
+/* Direction A: "Civic editorial". A calm, warm, editorial look.
+   Baskervville headlines echo the serif "Civic AI" in the logo; documentary-style photography. */
+:root {
+	--bg: #FBFAF6;
+	--hero-bg: #FBFAF6;
+	--tint: #F3F1EA;
+	--ink: #15181A;
+	--ink-soft: #3F464B;
+	--muted: #646C6A;
+	--line: #E4E1D8;
+	--line-strong: #C9C5BA;
+
+	--accent: #0B6E4A;
+	--accent-hover: #08583B;
+	--on-accent: #FFFFFF;
+	--accent-ink: #0B6E4A;
+	--accent-soft: #E2F1E8;
+	--link: #0B6E4A;
+	--link-hover: #08583B;
+	--focus: #2F8F63;
+	--warn: #A23B1E;
+
+	--card-bg: #FFFFFF;
+	--card-border: 1px solid #E4E1D8;
+	--input-bg: #FFFFFF;
+	--radius-card: 6px;
+	--radius-img: 4px;
+	--radius-btn: 4px;
+	--radius-input: 4px;
+	--tile-gap: 20px;
+
+	--font-display: "Baskervville", Georgia, serif;
+	--display-weight: 500;
+	--display-tracking: -0.01em;
+	--h1: clamp(40px, 5.4vw, 64px);
+	--h2: clamp(30px, 3.5vw, 44px);
+	--h3: 24px;
+	--font-body: "Inter", system-ui, -apple-system, sans-serif;
+	--font-eyebrow: "Inter", system-ui, sans-serif;
+	--font-wordmark: "Inter", system-ui, sans-serif;
+	--font-supporter: "Baskervville", Georgia, serif;
+
+	--header-bg: rgba(251, 250, 246, 0.92);
+	--callout-bg: #E5F1E9;
+	--callout-ink: #15181A;
+	--callout-ink-soft: #3F464B;
+	--cta-bg: #F3F1EA;
+	--footer-bg: #EFECE3;
+	--footer-ink: #15181A;
+	--footer-muted: #59615F;
+	--footer-line: #DAD6CB;
+	--team-filter: none;
+}
+
+.hero-art img { box-shadow: 0 1px 0 rgba(0,0,0,.04); }
+.tile { border-top: 3px solid var(--accent); }

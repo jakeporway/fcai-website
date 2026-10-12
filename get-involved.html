@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Get involved | Foundation for Civic AI</title>
+<meta name="description" content="Apply to use our computers, get early access to free private AI tools, or support our work.">
+<meta name="robots" content="noindex">
+<meta property="og:title" content="Get involved | Foundation for Civic AI">
+<meta property="og:description" content="Apply to use our computers, get early access to free private AI tools, or support our work.">
+<meta property="og:image" content="img/og-image.png">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baskervville:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/site.css">
+<link rel="stylesheet" href="css/theme-a.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+	<div class="wrap header-inner">
+		<a class="wordmark" href="index.html" aria-label="Foundation for Civic AI, home">
+			<span class="wm-line">Foundation</span>
+			<span class="wm-line">for <span class="wm-serif">Civic AI</span></span>
+		</a>
+		<button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+		<nav class="site-nav" id="site-nav" aria-label="Main">
+			<a href="index.html">Home</a>
+			<a href="how-it-works.html">How it works</a>
+			<a href="grantees.html">Grantees</a>
+			<a href="about.html">About</a>
+			<a class="btn btn-primary btn-small" href="get-involved.html">Get involved</a>
+		</nav>
+	</div>
+</header>
+<main id="main">
+<section class="page-hero">
+	<div class="wrap">
+		<div class="narrow">
+			<p class="eyebrow">Get involved</p>
+			<h1>Let's work together</h1>
+			<p class="lead">There are three ways to get involved. Pick the one that fits, and we'll take it from there.</p>
+		</div>
+		<div class="paths paths-hero">
+			<a class="path path-link" href="#apply">
+				<p class="path-who">For nonprofits and public agencies</p>
+				<h2 class="h3">Apply to use our computers</h2>
+				<p>Have an AI project that needs more computing power than you can get? Tell us about it.</p>
+				<span class="path-go">Start an application ↓</span>
+			</a>
+			<a class="path path-link" href="#private-ai">
+				<p class="path-who">For organizations with sensitive data</p>
+				<h2 class="h3">Get early access to private AI</h2>
+				<p>Join the list for free AI tools that never store your data.</p>
+				<span class="path-go">Join the list ↓</span>
+			</a>
+			<a class="path path-link" href="#support">
+				<p class="path-who">For funders and partners</p>
+				<h2 class="h3">Support our work</h2>
+				<p>Help us bring AI infrastructure to more of the social sector.</p>
+				<span class="path-go">Get in touch ↓</span>
+			</a>
+		</div>
+	</div>
+</section>
+
+<section class="section section-tint" id="apply">
+	<div class="wrap form-layout">
+		<div class="form-intro">
+			<p class="eyebrow">Apply</p>
+			<h2>Apply to use our computers</h2>
+			<p>This short application takes about ten minutes. Answer in your own words. You don't need a technical answer to every question, and if you're unsure about something, just say so.</p>
+			<p>We read every application and aim to reply within a few weeks. We look for projects that serve the public, teams that can do the technical work, and a responsible plan for handling data.</p>
+			<p class="fine">Not sure if you're a fit? Read <a href="how-it-works.html#fit">what our computers are built for</a> or the <a href="#faq">FAQ</a>.</p>
+		</div>
+
+		<form class="form" name="apply" method="POST" action="thanks.html" data-netlify="true" netlify-honeypot="bot-field">
+			<input type="hidden" name="form-name" value="apply">
+			<p class="hp"><label>Leave this empty <input name="bot-field"></label></p>
+
+			<fieldset>
+				<legend>About you</legend>
+				<div class="field-row">
+					<label class="field">Your name <span class="req">*</span><input name="name" autocomplete="name" required></label>
+					<label class="field">Email <span class="req">*</span><input name="email" type="email" autocomplete="email" required></label>
+				</div>
+				<div class="field-row">
+					<label class="field">Organization <span class="req">*</span><input name="organization" autocomplete="organization" required></label>
+					<label class="field">Type of organization <span class="req">*</span>
+						<select name="org_type" required>
+							<option value="">Choose one</option>
+							<option>Nonprofit</option>
+							<option>Government agency</option>
+							<option>University or research group</option>
+							<option>Fiscally sponsored project</option>
+							<option>Other</option>
+						</select>
+					</label>
+				</div>
+				<label class="field">Website <span class="opt">(optional)</span><input name="website" type="url" placeholder="https://"></label>
+			</fieldset>
+
+			<fieldset>
+				<legend>Your project</legend>
+				<label class="field">What problem are you working on, and who does it help? <span class="req">*</span>
+					<textarea name="project" rows="5" required></textarea>
+				</label>
+				<div class="field">
+					<span class="field-label">What would you use our computers for? <span class="req">*</span></span>
+					<label class="check"><input type="checkbox" name="use" value="Train a new AI model"> Train a new AI model</label>
+					<label class="check"><input type="checkbox" name="use" value="Improve or fine-tune an existing model"> Improve (fine-tune) an existing model</label>
+					<label class="check"><input type="checkbox" name="use" value="Run a model on a large amount of data"> Run a model on a large amount of data</label>
+					<label class="check"><input type="checkbox" name="use" value="Not sure yet"> Not sure yet</label>
+				</div>
+				<label class="field">Roughly how much computing do you think you'll need?
+					<select name="scale">
+						<option>Not sure</option>
+						<option>A little: a few GPUs for a few weeks</option>
+						<option>A moderate amount: several GPUs for a few months</option>
+						<option>A lot: large training runs or many months</option>
+					</select>
+				</label>
+				<label class="field">Anything else about the technical side? <span class="opt">(optional)</span>
+					<textarea name="technical_details" rows="3" placeholder="Models, data size, tools you use..."></textarea>
+				</label>
+				<label class="field">If the project works, what changes for your mission? <span class="req">*</span>
+					<textarea name="impact" rows="4" required></textarea>
+				</label>
+			</fieldset>
+
+			<fieldset>
+				<legend>Your situation</legend>
+				<div class="field">
+					<span class="field-label">What's kept you from getting this computing power elsewhere?</span>
+					<label class="check"><input type="checkbox" name="barriers" value="Cost"> Cost</label>
+					<label class="check"><input type="checkbox" name="barriers" value="Cloud credits ran out or weren't enough"> Cloud credits ran out or weren't enough</label>
+					<label class="check"><input type="checkbox" name="barriers" value="Can't easily buy hardware or cloud services"> We can't easily buy hardware or cloud services</label>
+					<label class="check"><input type="checkbox" name="barriers" value="Data can't go to a commercial cloud"> Our data can't go to a commercial cloud provider</label>
+					<label class="check"><input type="checkbox" name="barriers" value="No in-house expertise to set it up"> We don't have the expertise to set it up</label>
+					<label class="check"><input type="checkbox" name="barriers" value="Other"> Something else</label>
+				</div>
+				<div class="field">
+					<span class="field-label">Does the project involve sensitive data, like health, location, or personal information?</span>
+					<div class="inline-choices">
+						<label class="check"><input type="radio" name="sensitive_data" value="Yes"> Yes</label>
+						<label class="check"><input type="radio" name="sensitive_data" value="No"> No</label>
+						<label class="check"><input type="radio" name="sensitive_data" value="Not sure"> Not sure</label>
+					</div>
+				</div>
+				<label class="field">If so, how do you plan to protect it? <span class="opt">(optional)</span>
+					<textarea name="data_protection" rows="3"></textarea>
+				</label>
+				<label class="field">Who on your team would do the technical work? <span class="req">*</span>
+					<input name="technical_lead" required placeholder="Name and role, e.g. our data scientist">
+				</label>
+				<label class="field">How did you hear about us? <span class="opt">(optional)</span><input name="referral"></label>
+			</fieldset>
+
+			<button class="btn btn-primary" type="submit">Send application</button>
+			<p class="form-status" role="status"></p>
+		</form>
+	</div>
+</section>
+
+<section class="section" id="private-ai">
+	<div class="wrap form-layout">
+		<div class="form-intro">
+			<p class="eyebrow">Early access</p>
+			<h2>Get early access to private AI</h2>
+			<p>Many nonprofits want to use AI for everyday work, like summarizing case notes, translating documents, or drafting reports, but can't send sensitive information to a commercial AI company.</p>
+			<p>We're building free AI tools that run on our own computers and keep none of your data. Join the list and we'll let you know when they're ready to try.</p>
+		</div>
+
+		<form class="form" name="private-ai" method="POST" action="thanks.html" data-netlify="true" netlify-honeypot="bot-field">
+			<input type="hidden" name="form-name" value="private-ai">
+			<p class="hp"><label>Leave this empty <input name="bot-field"></label></p>
+			<div class="field-row">
+				<label class="field">Your name <span class="req">*</span><input name="name" autocomplete="name" required></label>
+				<label class="field">Email <span class="req">*</span><input name="email" type="email" autocomplete="email" required></label>
+			</div>
+			<label class="field">Organization <span class="req">*</span><input name="organization" autocomplete="organization" required></label>
+			<label class="field">What would you like to use AI for? <span class="req">*</span>
+				<textarea name="use_case" rows="4" required></textarea>
+			</label>
+			<label class="field">What kind of sensitive information do you work with? <span class="opt">(optional)</span>
+				<input name="data_types" placeholder="e.g. client case files, health records">
+			</label>
+			<button class="btn btn-primary" type="submit">Join the list</button>
+			<p class="form-status" role="status"></p>
+		</form>
+	</div>
+</section>
+
+<section class="section cta-band" id="support">
+	<div class="wrap cta-inner">
+		<div>
+			<p class="eyebrow">Support our work</p>
+			<h2>Help us bring AI infrastructure to more of the social sector</h2>
+			<p>We'd love to hear from foundations, companies with computing capacity to share, and programs that support technical nonprofits. Our Executive Director, Andrew Rasiej, leads these conversations.</p>
+		</div>
+		<div class="btn-row">
+			<a class="btn btn-primary" href="mailto:andrew@dcn.com">Email Andrew Rasiej</a>
+		</div>
+	</div>
+</section>
+
+<section class="section" id="faq">
+	<div class="wrap split">
+		<div class="split-head">
+			<p class="eyebrow">FAQ</p>
+			<h2>Common questions</h2>
+			<p>Don't see yours? Email <a href="mailto:team@foundationcivic.ai">team@foundationcivic.ai</a>.</p>
+		</div>
+		<div class="split-body faq">
+			<details>
+				<summary>Who can apply?</summary>
+				<p>Nonprofits, government agencies, university research groups, and fiscally sponsored projects, in the US or elsewhere. What matters is that the work serves the public and that you can handle data responsibly. You don't need a referral.</p>
+			</details>
+			<details>
+				<summary>Does it really cost nothing?</summary>
+				<p>Yes. There's no charge for computing time or for advice from our experts. Your team's own time is the main investment.</p>
+			</details>
+			<details>
+				<summary>We're not very technical. Can we still apply?</summary>
+				<p>You'll need at least one person who can work with code and data, because your team runs its own work on our computers. If that's not you yet, the private AI tools we're building may be a better fit. <a href="#private-ai">Join the early-access list.</a></p>
+			</details>
+			<details>
+				<summary>What if our project outgrows what we're given?</summary>
+				<p>Tell us early. Capacity is limited, so we can't promise more, but we can help you scale the work down, run it in a different order, or plan a move to paid computing.</p>
+			</details>
+			<details>
+				<summary>What happens to our data when the grant ends?</summary>
+				<p>You'll have a set amount of time to copy everything off our computers before your access ends. Plan for that from the start, and never keep the only copy of anything on our cluster.</p>
+			</details>
+		</div>
+	</div>
+</section>
+</main>
+<footer class="site-footer">
+	<div class="wrap footer-inner">
+		<div class="footer-brand">
+			<a class="wordmark wordmark-footer" href="index.html">
+				<span class="wm-line">Foundation</span>
+				<span class="wm-line">for <span class="wm-serif">Civic AI</span></span>
+			</a>
+			<p>Free, accessible AI infrastructure for the social sector.</p>
+		</div>
+		<div>
+			<h2 class="footer-head">Explore</h2>
+			<ul class="footer-links">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="how-it-works.html">How it works</a></li>
+				<li><a href="grantees.html">Grantees</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="get-involved.html">Get involved</a></li>
+			</ul>
+		</div>
+		<div>
+			<h2 class="footer-head">Contact</h2>
+			<ul class="footer-links">
+				<li><a href="mailto:team@foundationcivic.ai">team@foundationcivic.ai</a></li>
+				<li><a href="get-involved.html#apply">Apply to use our computers</a></li>
+				<li><a href="mailto:andrew@dcn.com">Funders and partners</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="wrap footer-legal">
+		<p>&copy; 2026 Foundation for Civic AI. A fiscally sponsored project of Res Publica.</p>
+		<p>Computing cluster hosted by Cornell Tech on hardware donated by NVIDIA.</p>
+	</div>
+</footer>
+<script src="js/site.js"></script>
+</body>
+</html>

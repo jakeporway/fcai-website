@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How it works | Foundation for Civic AI</title>
+<meta name="description" content="How our free computing program works: what you get, whether your project is a fit, and what happens from application to launch.">
+<meta name="robots" content="noindex">
+<meta property="og:title" content="How it works | Foundation for Civic AI">
+<meta property="og:description" content="How our free computing program works: what you get, whether your project is a fit, and what happens from application to launch.">
+<meta property="og:image" content="img/og-image.png">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baskervville:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/site.css">
+<link rel="stylesheet" href="css/theme-a.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+	<div class="wrap header-inner">
+		<a class="wordmark" href="index.html" aria-label="Foundation for Civic AI, home">
+			<span class="wm-line">Foundation</span>
+			<span class="wm-line">for <span class="wm-serif">Civic AI</span></span>
+		</a>
+		<button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+		<nav class="site-nav" id="site-nav" aria-label="Main">
+			<a href="index.html">Home</a>
+			<a href="how-it-works.html" aria-current="page">How it works</a>
+			<a href="grantees.html">Grantees</a>
+			<a href="about.html">About</a>
+			<a class="btn btn-primary btn-small" href="get-involved.html">Get involved</a>
+		</nav>
+	</div>
+</header>
+<main id="main">
+<section class="page-hero">
+	<div class="wrap narrow">
+		<p class="eyebrow">How it works</p>
+		<h1>A grant of computing power, with experts to help you use it</h1>
+		<p class="lead">Think of it as a grant. Instead of money, you receive time on powerful computers built for AI, plus expert help to use them well. Most grants run for up to a year.</p>
+		<p>The program is in its pilot stage, so we work with a small number of organizations at a time and keep improving as we go. Many of our grantees are referred by funders like the Bezos Earth Fund, but anyone can apply.</p>
+	</div>
+</section>
+
+<section class="section section-tint">
+	<div class="wrap">
+		<div class="section-head">
+			<p class="eyebrow">What you get</p>
+			<h2>Everything you need to get started</h2>
+		</div>
+		<div class="tiles">
+			<article class="tile">
+				<span class="tile-num">01</span>
+				<h3>Time on our computers</h3>
+				<p>Your team gets dedicated use of part of our computing cluster, usually 8 GPUs, and more if the project calls for it.</p>
+			</article>
+			<article class="tile">
+				<span class="tile-num">02</span>
+				<h3>Help getting set up</h3>
+				<p>Cornell Tech's IT team creates your accounts and walks your team through connecting securely. We provide step-by-step setup guides.</p>
+			</article>
+			<article class="tile">
+				<span class="tile-num">03</span>
+				<h3>Expert advice</h3>
+				<p>Our data scientists and AI engineers help you plan the work and use the machines efficiently, with check-ins throughout your grant.</p>
+			</article>
+		</div>
+		<details class="disclosure">
+			<summary>Technical specifications</summary>
+			<table class="spec-table">
+				<tr><th scope="row">Servers</th><td>4 NVIDIA DGX servers</td></tr>
+				<tr><th scope="row">GPUs</th><td>32 NVIDIA A100 80GB (8 per server)</td></tr>
+				<tr><th scope="row">CPU and memory</th><td>48 CPUs and 1.5TB RAM per server</td></tr>
+				<tr><th scope="row">Storage</th><td>About 650TB shared</td></tr>
+				<tr><th scope="row">Hosting</th><td>Cornell Tech, New York City</td></tr>
+			</table>
+		</details>
+	</div>
+</section>
+
+<section class="section">
+	<div class="wrap split">
+		<div class="split-head">
+			<p class="eyebrow">Why expertise matters</p>
+			<h2>Why we pair computers with expert help</h2>
+		</div>
+		<div class="split-body">
+			<p>Running AI on powerful hardware is a skill of its own. In our experience, teams new to it can use up donated computing time two to ten times faster than an experienced commercial team would.</p>
+			<p>A few conversations with someone who has done it before can save weeks of work and make a grant stretch much further. That's why every grantee has access to our experts, not just our machines.</p>
+		</div>
+	</div>
+</section>
+
+<section class="section section-tint" id="fit">
+	<div class="wrap split">
+		<div class="split-head">
+			<p class="eyebrow">Is it a fit?</p>
+			<h2>What our computers are built for</h2>
+		</div>
+		<div class="split-body">
+			<p>Our computers are built for creating and improving AI models, and for running them over large amounts of data: for example, teaching a model to recognize crop diseases, analyzing thousands of hours of camera footage, or studying genetic data.</p>
+			<p>They aren't meant for hosting a website or an app that runs around the clock. If you're not sure whether your project fits, apply anyway. We'll give you a straight answer.</p>
+			<details class="disclosure">
+				<summary>For technical teams: workload guide</summary>
+				<table class="fit-table">
+					<tr><th scope="row">Inference on small and medium models</th><td class="fit-yes">Strong fit</td></tr>
+					<tr><th scope="row">Full fine-tuning of ~13B-parameter models, or LoRA on larger ones</th><td class="fit-yes">Likely fit</td></tr>
+					<tr><th scope="row">Full fine-tuning of ~30B models; larger training runs</th><td class="fit-maybe">Depends on capacity</td></tr>
+					<tr><th scope="row">Full fine-tuning of 70B+ models</th><td class="fit-no">Unlikely to fit</td></tr>
+					<tr><th scope="row">Hosting a live app, website, or always-on service</th><td class="fit-no">Not a fit</td></tr>
+				</table>
+			</details>
+		</div>
+	</div>
+</section>
+
+<section class="section">
+	<div class="wrap split">
+		<div class="split-head">
+			<p class="eyebrow">Good to know</p>
+			<h2>What to expect</h2>
+		</div>
+		<div class="split-body">
+			<ul class="barriers">
+				<li><strong>It adds to what you already have.</strong> Our computers should supplement your existing tools, so keep a backup plan for anything critical.</li>
+				<li><strong>Support is reliable, not instant.</strong> Technical questions go through Cornell Tech's help desk and usually get an answer within about a week.</li>
+				<li><strong>You'll need someone technical on the team.</strong> Your team works directly on a shared Linux system, connecting through a secure VPN.</li>
+				<li><strong>Your data stays yours.</strong> You're responsible for it, so always keep your own copies.</li>
+			</ul>
+		</div>
+	</div>
+</section>
+
+<section class="section section-tint">
+	<div class="wrap">
+		<div class="section-head">
+			<p class="eyebrow">Step by step</p>
+			<h2>From application to results</h2>
+		</div>
+		<ol class="steps">
+			<li><h3>Apply</h3><p>Tell us about your organization and the problem you're working on.</p></li>
+			<li><h3>Talk it through</h3><p>We have a short call to confirm the project is a good match for our computers.</p></li>
+			<li><h3>Get set up</h3><p>Cornell Tech creates your accounts and walks your team through access.</p></li>
+			<li><h3>Build</h3><p>Up to a year on the cluster, with check-ins and advice from our experts.</p></li>
+			<li><h3>Wrap up</h3><p>Move your working model to your own systems, or apply to extend for a second term.</p></li>
+		</ol>
+	</div>
+</section>
+
+<section class="section cta-band">
+	<div class="wrap cta-inner">
+		<h2>Ready to tell us about your project?</h2>
+		<div class="btn-row">
+			<a class="btn btn-primary" href="get-involved.html#apply">Apply to use our computers</a>
+			<a class="btn btn-secondary" href="get-involved.html#faq">Read the FAQ</a>
+		</div>
+	</div>
+</section>
+</main>
+<footer class="site-footer">
+	<div class="wrap footer-inner">
+		<div class="footer-brand">
+			<a class="wordmark wordmark-footer" href="index.html">
+				<span class="wm-line">Foundation</span>
+				<span class="wm-line">for <span class="wm-serif">Civic AI</span></span>
+			</a>
+			<p>Free, accessible AI infrastructure for the social sector.</p>
+		</div>
+		<div>
+			<h2 class="footer-head">Explore</h2>
+			<ul class="footer-links">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="how-it-works.html">How it works</a></li>
+				<li><a href="grantees.html">Grantees</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="get-involved.html">Get involved</a></li>
+			</ul>
+		</div>
+		<div>
+			<h2 class="footer-head">Contact</h2>
+			<ul class="footer-links">
+				<li><a href="mailto:team@foundationcivic.ai">team@foundationcivic.ai</a></li>
+				<li><a href="get-involved.html#apply">Apply to use our computers</a></li>
+				<li><a href="mailto:andrew@dcn.com">Funders and partners</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="wrap footer-legal">
+		<p>&copy; 2026 Foundation for Civic AI. A fiscally sponsored project of Res Publica.</p>
+		<p>Computing cluster hosted by Cornell Tech on hardware donated by NVIDIA.</p>
+	</div>
+</footer>
+<script src="js/site.js"></script>
+</body>
+</html>
